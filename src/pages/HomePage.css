@@ -1,3 +1,17 @@
+:root {
+    --DarkOrange: #D55E02;
+    --Orange: #FB7E2A;
+    --Grey: #F2F3FF;
+    --Green: #377510;
+    --DarkGreen: #0D4031;
+}
+
+@font-face {
+    font-family: Lato;
+    /* BebasNeue, MuseoSlab, MuseoSans, Lato; */
+    src: url("https://mdn.github.io/web-fonts/LatoReg.ttf");
+}
+
 #itinerary-list {
     display: grid;
     grid-template-columns: 30%30%30%;

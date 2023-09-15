@@ -1,0 +1,25 @@
+.hero-cntnr {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('public/map-plan.jpg') no-repeat;
+    background-size: cover;
+    height: calc(100vh - 15px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10rem; 
+}
+
+.hero-text {
+    color: white;
+    font-family: Lato, sans-serif;
+    /* border: solid red; */
+    padding-left: 10rem;
+}
+
+.hero-h1 {
+    font-size: 10rem;
+}
+
+/* .hero-p {
+    font-size: 10rem;
+} */

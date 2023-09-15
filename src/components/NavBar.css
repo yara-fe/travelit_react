@@ -1,0 +1,42 @@
+/* 
+Dark Orange - #D55E02
+Orange - #FB7E2A
+Grey - #F2F3FF
+Green - #377510
+Dark Green - #0D4031 
+*/
+
+
+
+
+.nav {
+    background-color: var(--DarkGreen);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    align-items: center;
+    /* border: red solid 1px; */
+    font-size: 4rem;
+    font-family: Lato;
+}
+
+.nav-links {
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    /* border: blue solid 1px; */
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    /* border: yellow solid 1px; */
+    
+}
+
+nav a.active {
+    text-decoration: underline;
+    
+}
