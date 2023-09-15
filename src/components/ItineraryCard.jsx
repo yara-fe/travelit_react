@@ -6,11 +6,13 @@ function ItineraryCard(props) {
     const itineraryLink = `itinerary/${itineraryData.id}`;
     
     return (
-        <div className="itinerary-card">
-            <Link to ={itineraryLink}>
-                <img src={itineraryData.image} />
-                <h3>{itineraryData.title}</h3>
-            </Link>
+        <div className="card-cntnr">
+            <div className="itinerary-card">
+                <Link to ={itineraryLink}>
+                    <img src={itineraryData.image} />
+                    <h3>{itineraryData.title}</h3>
+                </Link>
+            </div>
         </div>
     )
 }

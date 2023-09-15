@@ -1,7 +1,14 @@
+
+.card-cntnr {
+    margin: 0 50px 0;
+}
+
 .itinerary-card {
+    /* position: relative; */
     width: 100%;
     border: 1px solid black;
-    box-shadow: 0px 0px 5px gray;
+    border-radius: 0 0 1rem 1rem;
+
 }
 
 .itinerary-card img{

@@ -7,12 +7,13 @@ function NavBar() {
             <nav className="nav">
                 <div className='logo-cntnr'>
                 <Link to="/" className='navbar-logo'>
-                    <img src="../public/travelit_logo1.png" alt="logo" width="400"/>
+                    <img src="../public/travelit_logo1.png" alt="logo" width="200"/>
                 </Link>
                 </div>
                 <div className='nav-links'>
-                    <Link to="/itinerary">Itinerary</Link>
+                    {/* <Link to="/itinerary">Itinerary</Link> */}
                     <Link to="/rewards">Reward</Link>
+                    <Link to="/rewards">Login</Link>
                 </div>
             </nav>
             <Outlet />
