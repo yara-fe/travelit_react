@@ -13,7 +13,7 @@ function NavBar() {
                 <div className='nav-links'>
                     {/* <Link to="/itinerary">Itinerary</Link> */}
                     <Link to="/rewards">Reward</Link>
-                    <Link to="/rewards">Login</Link>
+                    <Link to="/login">Login</Link>
                 </div>
             </nav>
             <Outlet />

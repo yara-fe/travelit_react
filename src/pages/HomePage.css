@@ -21,12 +21,6 @@ h1 {
 }
 
 
-@font-face {
-    font-family: Lato;
-    /* BebasNeue, MuseoSlab, MuseoSans, Lato; */
-    src: url("https://mdn.github.io/web-fonts/LatoReg.ttf");
-}
-
 #itinerary-list {
     display: grid;
     grid-template-columns: 30%30%30%;
