@@ -4,15 +4,25 @@
 }
 
 .itinerary-card {
-    /* position: relative; */
+    position: relative;
     width: 100%;
-    border: 1px solid black;
-    border-radius: 0 0 1rem 1rem;
-
+    border: 1px solid darkslategrey;
+    border-radius: 10px;
 }
 
 .itinerary-card img{
     width: 100%;
     height: 300px;
     object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.itinerary-card h3 {
+    text-align: center;
+}
+
+.itinerary-card a {
+    text-decoration: none;
+    font-family: Lato;
+    color:darkslategrey
 }

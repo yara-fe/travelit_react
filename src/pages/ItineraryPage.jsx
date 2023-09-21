@@ -1,5 +1,8 @@
 import { useParams } from "react-router-dom"
 import useItinerary from "../hooks/use-itinerary"
+import ItineraryHero from "../components/ItineraryHero"
+
+
 
 
 function ItineraryPage() {
@@ -20,10 +23,31 @@ function ItineraryPage() {
     }
 
     return (
-        <div>
-            <h1> Itineraries </h1>
+        <>
+        
+            <div className="itinerary-hero">
+                <img src={itinerary.image} />
+            </div>
             <h2> {itinerary.title} </h2>
-            <h3> Created at: {itinerary.date_created} </h3>
+
+            <div className="itinerary-wrapper">
+                
+                <div className="itinerary-overview">
+                    <h3> Overview </h3>
+                    <h4> Travel Period</h4>
+                    <p> { itinerary.travel_date }</p>
+                    <h4> Cost </h4>
+                    <p> {itinerary.cost}</p>
+                    <h4> Audience </h4>
+                    <p> {itinerary.audience}</p>
+                </div>
+                <div className="itinerary-details">
+                    <h3>Details</h3>
+                    <p> { itinerary.description } </p>
+                </div>
+            </div>
+
+            <div>
             <h3> Rewards </h3>
             <ul>
                 {itinerary.rewards.map((rewardData, key) => {
@@ -36,6 +60,7 @@ function ItineraryPage() {
                 })}
             </ul>
         </div>
+        </>
     ) 
 }
 
