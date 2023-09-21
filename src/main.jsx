@@ -8,6 +8,7 @@ import ItineraryPage from './pages/ItineraryPage'
 import RewardsPage from './pages/RewardsPage'
 import UserProfile from './pages/UserProfile'
 import LoginPage from './pages/LoginPage'
+import { AuthProvider } from './components/AuthProvider'
 
 //Import Components
 import NavBar from './components/NavBar'
@@ -28,6 +29,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )
