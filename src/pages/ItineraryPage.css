@@ -44,6 +44,26 @@ h4, p {
     padding: 0 1rem 0 2rem;
 }
 
-/* .support-wrapper p {
-    color: lightslategrey;
-} */
+.reward-list li {
+    /* border: 1px solid pink; */
+    margin-bottom: 1rem;
+    list-style-type: none;
+}
+
+.reward-wrapper {
+    border: 1px solid blue;
+    display: flex;
+}
+
+.reward-details p {
+    color: black;
+    margin: 0;
+}
+
+.reward-img-icon {
+    height: 35px
+}
+
+.reward-details {
+    display: flexbox;
+}

@@ -11,7 +11,7 @@ import LoginPage from './pages/LoginPage'
 import { AuthProvider } from './components/AuthProvider'
 
 //Import Components
-import NavBar from './components/NavBar'
+import NavBar from './components/NavBar/NavBar'
 
 const router = createBrowserRouter([
   {

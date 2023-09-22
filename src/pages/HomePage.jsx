@@ -1,7 +1,7 @@
 //import components
 import useItineraries from "../hooks/use-itineraries";
-import ItineraryCard from "../components/ItineraryCard";
-import HeroSection from "../components/HeroSection";
+import ItineraryCard from "../components/itinerarycard/ItineraryCard";
+import HeroSection from "../components/herosection/HeroSection";
 
 //import styling
 import "./Homepage.css"
@@ -13,12 +13,12 @@ function HomePage() {
 
     return (
         <>
-            <HeroSection></HeroSection>
-            <div id="itinerary-list">
-                {itineraries.map((itineraryData, key) => {
-                    return <ItineraryCard key={key} itineraryData={itineraryData} />
-                })}
-            </div>
+        <HeroSection></HeroSection>
+        <div id="itinerary-list">
+            {itineraries.map((itineraryData, key) => {
+                return <ItineraryCard key={key} itineraryData={itineraryData} />
+            })}
+        </div>
         </>
     )
 }

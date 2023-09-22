@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 
-import getItineraries from "../api/get-itineraries"
+import { getItineraries } from "../api/itinerariesAPI";
 
 export default function useItineraries() {
 
