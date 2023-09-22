@@ -1,69 +1,68 @@
-html {
+* {
     font-family: Lato;
-}
-
-h4, p {
-    margin:0;
-}
-
-
-.itinerary-wrapper{
-    /* border: 1px solid red; */
-    display: flex;
-    padding: 1.5rem 1rem;
-    gap: 2.5rem;
-}
-
-.itinerary-overview{
-    /* border: 1px solid green; */
-    padding: 0 1rem;
-    border: 1px solid rgba(0,0,0,0.125);
-    border-radius: 0.5rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-
-.itinerary-overview h4 {
-    color: var(--DarkOrange);
-}
-
-.itinerary-overview p, .support-wrapper p {
-    color: lightslategrey;
-    /* color: var(--Grey); */
-    margin-top: 0.25rem;
-    margin-bottom: 1rem;
-}
-
-/* .itinerary-details{
-    border: 1px solid blue;
-} */
-
-.support-wrapper {
-    border-top: 1px solid rgba(0,0,0,0.125);
-    /* border: solid 1px purple; */
-    margin-top: 1rem;
-    padding: 0 1rem 0 2rem;
-}
-
-.reward-list li {
-    /* border: 1px solid pink; */
-    margin-bottom: 1rem;
-    list-style-type: none;
-}
-
-.reward-wrapper {
-    border: 1px solid blue;
-    display: flex;
-}
-
-.reward-details p {
-    color: black;
     margin: 0;
+    padding: 0;
 }
 
 .reward-img-icon {
     height: 35px
 }
 
-.reward-details {
-    display: flexbox;
+/* TEXT STYLES */
+h2 {
+    margin: 1rem;
+}
+
+h3 {
+    margin: 1rem 0 1rem 0;
+}
+
+.itinerary-overview h4 {
+    color: var(--DarkOrange);
+}
+
+.itinerary-overview p {
+    color: lightslategrey;
+    margin: 0.15rem 0 1rem 0;
+}
+
+.support-msg {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+/* PAGE DESIGN */
+
+.itinerary-hero img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.itinerary-wrapper {
+    border: 1px solid red;
+    display: flex;
+    margin: 1rem;
+    gap: 2.5rem;
+}
+
+.itinerary-overview {
+    padding: 0 1rem;
+    border: 1px solid rgba(0,0,0,0.125);
+    border-radius: 0.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.support-wrapper {
+    /* border-top: 1px solid rgba(0,0,0,0.125); */
+    border: solid 1px purple;
+    margin: 1rem;
+}
+
+.reward-list ul {
+    /* border: 2px solid palegreen; */
+    margin: 1rem 0;
+    list-style-type: none;
 }
