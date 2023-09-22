@@ -42,7 +42,7 @@ h3 {
 }
 
 .itinerary-wrapper {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     margin: 1rem;
     gap: 2.5rem;
@@ -56,8 +56,8 @@ h3 {
 }
 
 .support-wrapper {
-    /* border-top: 1px solid rgba(0,0,0,0.125); */
-    border: solid 1px purple;
+    border-top: 1px solid rgba(0,0,0,0.125);
+    /* border: solid 1px purple; */
     margin: 1rem;
 }
 

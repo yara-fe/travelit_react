@@ -5,7 +5,7 @@
     /* border: solid 1px red; */
     border-radius: 0.25rem;
     background-color: var(--Green);
-    padding: 0 0 1rem 0;
+    padding: 1rem 0;
     margin: 0;
     width: 100%;
     display: block;
@@ -20,7 +20,7 @@
 .form-input {
     width: 85%;
     /* border: solid 2px yellow; */
-    margin: 0 0 0.25rem 0;
+    margin: 0 0 0.5rem 0;
     padding: 0.25rem;
     border: 1px solid transparent;
     border-radius: 0.25rem;
@@ -39,6 +39,7 @@
 .anonymous-lbl {
     color: white;
     font-size: 0.75rem;
+    margin-right: 0.5rem;
 }
 
 .form-input {
