@@ -1,29 +1,52 @@
-
-.reward-frm {
-    display: flex;
-    flex-flow: row wrap;
-    /* padding: 1rem; */
-    gap: 1rem;
-    padding: 0.5rem 1rem;
+* {
+    font-family: Lato;
+}
+.form-wrapper {
+    /* border: solid 1px red; */
     border-radius: 0.25rem;
     background-color: var(--Green);
+    padding: 0 0 1rem 0;
+    margin: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
 }
 
-.reward-frm input {
-    border: none;
-    border-bottom: 1px solid green;
-    /* border: 1px dashed greenyellow; */
-    margin: 10px 10px 10px 10px;
-    padding: 0.5rem;
-    box-sizing: border-box;
+.reward-form {
+    /* border: solid 1px beige; */
+    padding: 1rem 0;
 }
 
-.reward-frm label {
+.form-input {
+    width: 85%;
+    /* border: solid 2px yellow; */
+    margin: 0 0 0.25rem 0;
+    padding: 0.25rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+.form-input::placeholder {
+    color: gray;
+    font-size: 0.85rem;
+    font-style: italic
+}
+
+
+.form-label {
+    display: none;
+}
+
+.anonymous-lbl {
     color: white;
-    margin-left: 1rem;
+    font-size: 0.75rem;
 }
 
-.reward-frm button {
+.form-input {
+    font-size: 1rem;
+}
+
+.submit-btn {
+    align-items: center;
     background-color: var(--Orange);
     border: 1px solid transparent;
     border-radius: .25rem;
@@ -31,23 +54,40 @@
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
-    padding: 0.5rem 2rem;
+    display: inline-flex;
     font-size: 1rem;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    min-height: 1rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
 }
 
-.reward-frm button:hover,
-button:focus {
+.submit-btn:hover,
+.submit-btn:focus {
   background-color: #fb8332;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
-.reward-frm button:hover {
+.submit-btn:hover {
   transform: translateY(-1px);
 }
 
-.reward-frm button:active {
+.submit-btn:active {
   background-color: var(--DarkOrange);
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }
+
+
+
 

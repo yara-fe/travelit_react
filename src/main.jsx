@@ -5,7 +5,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 //Import Pages
 import HomePage from './pages/HomePage'
 import ItineraryPage from './pages/ItineraryPage'
-import RewardsPage from './pages/RewardsPage'
 import UserProfile from './pages/UserProfile'
 import LoginPage from './pages/LoginPage'
 import { AuthProvider } from './components/AuthProvider'
@@ -20,7 +19,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <HomePage /> },
       { path: "/itinerary/:id", element: <ItineraryPage /> },
-      { path: "/rewards", element: <RewardsPage /> },
+      // { path: "/rewards", element: <RewardsPage /> },
       { path: "/login", element: <LoginPage /> },
       // { path: "/itinerary", element: <ItineraryPage /> },
     ],

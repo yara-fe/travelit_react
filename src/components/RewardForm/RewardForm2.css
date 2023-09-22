@@ -1,0 +1,53 @@
+
+.reward-frm {
+    display: flex;
+    flex-flow: row wrap;
+    /* padding: 1rem; */
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background-color: var(--Green);
+}
+
+.reward-frm input {
+    border: none;
+    border-bottom: 1px solid green;
+    /* border: 1px dashed greenyellow; */
+    margin: 10px 10px 10px 10px;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.reward-frm label {
+    color: white;
+    margin-left: 1rem;
+}
+
+.reward-frm button {
+    background-color: var(--Orange);
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+}
+
+.reward-frm button:hover,
+button:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.reward-frm button:hover {
+  transform: translateY(-1px);
+}
+
+.reward-frm button:active {
+  background-color: var(--DarkOrange);
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+

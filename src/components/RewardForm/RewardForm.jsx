@@ -6,8 +6,8 @@ import postReward from "../../api/rewardsAPI"
 
 function RewardForm() {
 
-    const { id } = useParams() //use useParams hook and the url to identify which itinerary to award the reward to.
-    // console.log("itinerary:", id)
+    //use useParams hook and the url to identify which itinerary to award the reward to.
+    const { id } = useParams() 
 
     //State to manage input values
     const [ rewardData, setRewardData ] = useState({
@@ -16,7 +16,6 @@ function RewardForm() {
         anonymous: false,
         itinerary: parseInt(id) //convert the id from string to number
     })
-    // console.log(rewardData)
 
     //Event handler to update state for all fields in the reward form
     const handleChange = (event) => {
@@ -49,38 +48,43 @@ function RewardForm() {
     }
 
     return (
-        <>
-            <div className="reward-frm">
-                <form>
+        <div className="form-wrapper">
+            <form className="reward-form">
+                <div className="amount">
+                    <label className="form-label">Amount</label>
                     <input 
                     type="number" 
-                    placeholder="Amount"
+                    placeholder="Enter amount"
                     name="amount"
                     value={rewardData.amount}
                     onChange={handleChange}
-                    // size="5"
+                    className="form-input"
                     />
+                </div>
+                <div className="comment">
+                    <label className="form-label">Comment</label>
                     <input 
                     type="text" 
                     placeholder="Enter a comment"
                     name="comment"
                     value={rewardData.comment}
                     onChange={handleChange}
-                    size="120"
+                    className="form-input"
                     />
-                    <label>
-                    Anonymous:
+                </div>
+                <div className="anonymous">
+                    <label className="anonymous-lbl">Anonymous?</label>
                     <input
                     type="checkbox"
                     name="anonymous"
                     checked={rewardData.anonymous}
                     onChange={handleChange}
+                    className="form-checkbox"
                     />
-                    </label>
-                </form>
-                <button onClick={handleSubmit}>Submit</button>
-            </div>
-        </>
+                </div>
+            </form>
+            <button onClick={handleSubmit} className="submit-btn">Submit</button>
+        </div>
     )
 }
 
