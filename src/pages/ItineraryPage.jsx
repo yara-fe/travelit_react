@@ -22,7 +22,6 @@ function ItineraryPage(props) {
 
     return (
         <>
-        
         <div className="itinerary-hero">
             <img src={itinerary.image} />
         </div>
@@ -55,24 +54,24 @@ function ItineraryPage(props) {
             Return a list of rewards associated with the itinerary id 
             */}
             <div className="reward-list">
-                <ul>
-                    {itinerary.rewards.map((rewardData, key) => {
-                        return (
-                            <li key={key}>
-                                <div className="reward-wrapper">
-                                    <figure className='reward-img'>
-                                        <img src="/public/traveller.png" className="reward-img-icon"/>
-                                    </figure>
-                                    <div className="reward-details">
-                                    {/* <h4 className="giver">{rewardData.giver}</h4> will add back in once i figure out how to display user name*/}
-                                    <p className="reward-amount">${rewardData.amount}</p>
-                                    <p className="reward-comment">{rewardData.comment}</p>
-                                    </div>
+            <ul>
+                {itinerary.rewards.map((rewardData, key) => {
+                    return (
+                        <li key={key}>
+                            <div className="reward-wrapper">
+                                <figure className='reward-img'>
+                                    <img src="/public/traveller.png" className="reward-img-icon"/>
+                                </figure>
+                                <div className="reward-details">
+                                {/* <h4 className="giver">{rewardData.giver}</h4> will add back in once i figure out how to display user name*/}
+                                <p className="reward-amount">${rewardData.amount}</p>
+                                <p className="reward-comment">{rewardData.comment}</p>
                                 </div>
-                            </li>
-                        )
-                    })}
-                </ul>
+                            </div>
+                        </li>
+                    )
+                })}
+            </ul>
             </div>  
         </section>
         </>

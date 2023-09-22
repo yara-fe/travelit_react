@@ -9,6 +9,8 @@ function RewardForm() {
     //use useParams hook and the url to identify which itinerary to award the reward to.
     const { id } = useParams() 
 
+    const [ successMessage, setSuccessMessage ] = useState("")
+
     //State to manage input values
     const [ rewardData, setRewardData ] = useState({
         amount: 0,
@@ -38,9 +40,22 @@ function RewardForm() {
                 ...rewardData,
                 reward_date: new Date().toISOString() //today's date
             })
-
         //Handle the API response
         console.log('Reward submitted successfully', response)
+
+        setSuccessMessage("Thanks for giving a reward!")
+        setRewardData=({
+            amount: 0,
+            comment: "",
+            anonymous: false,
+            itinerary: parseInt(id,10)
+        })
+
+        //clear success message after 5 secs
+        setTimeout(() => {
+            setSuccessMessage("")
+        }, 5000)
+
         }
         catch (error) {
             console.error("Error submitting reward", error.message)
@@ -48,6 +63,7 @@ function RewardForm() {
     }
 
     return (
+        <>
         <div className="form-wrapper">
             <form className="reward-form">
                 <div className="amount">
@@ -85,6 +101,12 @@ function RewardForm() {
             </form>
             <button onClick={handleSubmit} className="submit-btn">Submit</button>
         </div>
+        <div className="msg-wrapper">
+            {successMessage && 
+            <div className="success-msg">{successMessage}</div>
+            }
+        </div>
+        </>
     )
 }
 
