@@ -1,6 +1,6 @@
 //import components
 import useItineraries from "../hooks/use-itineraries";
-import ItineraryCard from "../components/itinerarycard/ItineraryCard";
+import ItineraryCard from "../components/ItineraryCard/ItineraryCard"
 import HeroSection from "../components/herosection/HeroSection";
 
 //import styling
