@@ -92,10 +92,10 @@ function ItineraryForm() {
           name="audience" 
           value={itinerary.audience}
           onChange={handleChange} >
-            <option value="family">Family</option>
-            <option value="solo">Solo</option>
-            <option value="couple">Couple</option>
-            <option value="friends">Friends</option>
+            <option value="Family">Family</option>
+            <option value="Solo">Solo</option>
+            <option value="Couple">Couple</option>
+            <option value="Friends">Friends</option>
           </select>
         </div>
         <div className="form-item">
@@ -105,9 +105,9 @@ function ItineraryForm() {
           name="cost" 
           value={itinerary.cost}
           onChange={handleChange} >
-            <option value="low">$</option>
-            <option value="med">$$</option>
-            <option value="high">$$$</option>
+            <option value="$">$</option>
+            <option value="$$">$$</option>
+            <option value="$$$">$$$</option>
           </select>
         </div>
         <div className="form-item">

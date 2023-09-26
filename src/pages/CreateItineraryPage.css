@@ -6,5 +6,10 @@
 }
 
 .form-container {
-    margin-top: 3rem;
+    border: solid 1px red;
+    margin: 3rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }
+

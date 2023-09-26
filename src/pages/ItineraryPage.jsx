@@ -42,6 +42,7 @@ function ItineraryPage(props) {
             <div className="itinerary-details">
                 <h3>Details</h3>
                 <p> { itinerary.description } </p>
+                <p> { itinerary.itinerary_notes} </p>
             </div>
         </section>
 
