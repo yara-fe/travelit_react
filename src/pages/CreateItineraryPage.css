@@ -1,0 +1,10 @@
+.create-itinerary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.form-container {
+    margin-top: 3rem;
+}

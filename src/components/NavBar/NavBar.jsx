@@ -22,13 +22,14 @@ function NavBar() {
                 </Link>
                 </div>
                 <div className='nav-links'>
-                    {/* <Link to="/itinerary">Itinerary</Link> */}
-                    <Link to="/rewards">Reward</Link>
-                    {/* <Link to="/login">Login</Link> */}
                     {auth.token ? (
+                        <>
+                        {/* <Link to="/user">My Profile</Link> */}
+                        <Link to="/create-itinerary">Create Itinerary</Link>
                         <Link to="/" onClick={handleLogout}>
                             Logout
                         </Link>
+                        </>
                     ) : (
                         <Link to="/login">Login</Link>
                     )}

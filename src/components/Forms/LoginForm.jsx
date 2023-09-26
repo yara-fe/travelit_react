@@ -1,10 +1,8 @@
-import React from 'react'
+// import './Forms.css'
 import { useState } from 'react' //so that form can accept a username and password
-import postLogin from '../api/post-login' //import API
+import postLogin from '../../api/post-login' //import API
 import { useNavigate } from "react-router-dom"
-import { useAuth } from "../hooks/use-auth.js"
-
-
+import { useAuth } from "../../hooks/use-auth.js"
 
 function LoginForm() {
 
@@ -46,30 +44,33 @@ function LoginForm() {
         console.log(credentials)
     }
 
-    //Returns the format of the page
+    //Login Form Layout
     return (
-        <form>
-            <div>
-                <label htmlFor="username">Username:</label>
-                {/* <input type="text" id="username" placeholder="Enter username" /> */}
-                <input
-                    type='text'
-                    id='username'
-                    placeholder='Enter username'
-                    onChange={handleChange}
-                />
-            </div>
-            <div>
-                <label htmlFor="password">Password:</label>
-                <input
-                    type='password'
-                    id='password'
-                    placeholder='Enter password'
-                    onChange={handleChange}
-                />
-            </div>
-            <button type="submit" onClick={handleSubmit}>Login</button>
-        </form>
+        <div className='login-wrapper'>
+            <form className='login-form'>
+                <div>
+                    <label htmlFor="username">Username:</label>
+                    <input
+                        type='text'
+                        id='username'
+                        placeholder='Enter username'
+                        onChange={handleChange}
+                        className="form-input"
+                    />
+                </div>
+                <div>
+                    <label htmlFor="password">Password:</label>
+                    <input
+                        type='password'
+                        id='password'
+                        placeholder='Enter password'
+                        onChange={handleChange}
+                        className="form-input"
+                    />
+                </div>
+                <button type="submit" onClick={handleSubmit} className='login-btn'>Login</button>
+            </form>
+        </div>
     )
 }
 

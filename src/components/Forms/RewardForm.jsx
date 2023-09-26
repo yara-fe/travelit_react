@@ -1,4 +1,4 @@
-import "../rewardForm/RewardForm.css"
+import './Forms.css'
 import { useState } from 'react'
 import { useParams } from "react-router-dom"
 
@@ -26,9 +26,9 @@ function RewardForm() {
         
         setRewardData((prevrewardData) => ({
             ...prevrewardData,
-            [name]: fieldValue,
-        }))
-    }
+            [name]: fieldValue,}));
+        }
+    
 
     //Event handler for submiting the form
     const handleSubmit = async (event) => {
@@ -40,23 +40,17 @@ function RewardForm() {
                 ...rewardData,
                 reward_date: new Date().toISOString() //today's date
             })
-        //Handle the API response
-        console.log('Reward submitted successfully', response)
+            
+            //Handle the API response
+            console.log('Reward submitted successfully', response)
 
-        setSuccessMessage("Thanks for giving a reward!")
-        setRewardData=({
-            amount: 0,
-            comment: "",
-            anonymous: false,
-            itinerary: parseInt(id,10)
-        })
+            setSuccessMessage("Thanks for giving a reward!")
+            setRewardData(rewardData) //After success, reset form to initial state
 
-        //clear success message after 5 secs
-        setTimeout(() => {
-            setSuccessMessage("")
-        }, 5000)
-
-        }
+            //clear success message after 5 secs
+            setTimeout(() => {setSuccessMessage("")}, 5000)
+            }
+            
         catch (error) {
             console.error("Error submitting reward", error.message)
         }
@@ -109,5 +103,4 @@ function RewardForm() {
         </>
     )
 }
-
 export default RewardForm

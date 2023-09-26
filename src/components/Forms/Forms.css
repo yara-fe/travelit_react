@@ -1,29 +1,31 @@
-* {
+* , *:before, *:after {
     font-family: Lato;
+    box-sizing: border-box;
 }
 .form-wrapper {
     /* border: solid 1px red; */
     border-radius: 0.25rem;
     background-color: var(--Green);
-    padding: 1rem 0;
-    margin: 0;
+    padding: 1rem 1rem;
     width: 100%;
-    display: block;
-    text-align: center;
+    align-items: center;
 }
 
-.reward-form {
-    /* border: solid 1px beige; */
-    padding: 1rem 0;
+.login-wrapper {
+    border-radius: 0.25rem;
+    background-color: var(--Green);
+    padding: 1rem 1rem;
+    width: 60%;
 }
 
 .form-input {
-    width: 85%;
+    width: 100%;
     /* border: solid 2px yellow; */
     margin: 0 0 0.5rem 0;
     padding: 0.25rem;
     border: 1px solid transparent;
     border-radius: 0.25rem;
+    font-size: 1rem;
 }
 .form-input::placeholder {
     color: gray;
@@ -31,8 +33,11 @@
     font-style: italic
 }
 
+.reward-form {
+    padding: 1rem 0;
+}
 
-.form-label {
+.reward-form .form-label {
     display: none;
 }
 
@@ -42,17 +47,12 @@
     margin-right: 0.5rem;
 }
 
-.form-input {
-    font-size: 1rem;
-}
-
-.submit-btn {
+.submit-btn, .login-btn {
     align-items: center;
     background-color: var(--Orange);
     border: 1px solid transparent;
     border-radius: .25rem;
     box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-    box-sizing: border-box;
     color: #fff;
     cursor: pointer;
     display: inline-flex;
@@ -74,21 +74,31 @@
 }
 
 .submit-btn:hover,
-.submit-btn:focus {
+.submit-btn:focus,
+.login-btn:hover,
+.login-btn:focus {
   background-color: #fb8332;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
-.submit-btn:hover {
+.submit-btn:hover,
+.login-btn:hover {
   transform: translateY(-1px);
 }
 
-.submit-btn:active {
+.submit-btn:active,
+.login-btn:hover {
   background-color: var(--DarkOrange);
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }
 
+
+.itinerary-form label,
+.login-form label {
+    color: white;
+    display: flex;
+ }
 
 
 

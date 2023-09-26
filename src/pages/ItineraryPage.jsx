@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import useItinerary from "../hooks/use-itinerary"
 import "./ItineraryPage.css"
-import RewardForm from "../components/rewardform/RewardForm"
+import RewardForm from "../components/Forms/RewardForm"
 import RewardItem from "../components/RewardItem/RewardItem"
 
 function ItineraryPage(props) {
